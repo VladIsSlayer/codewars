@@ -1,12 +1,12 @@
 #include <iostream>
-#include <string.h>
+#include <string>
 
-std::string returnString(std::string name)
+std::string returnString(std::string &name)
 {
-    std::string hello = "Hello, ";
-    std::string howAreYou = " how are you doing today?";
+    static const std::string hello = "Hello, ";
+    static const std::string howAreYou = " how are you doing today?";
 
-    return(hello+name+howAreYou);
+    return(hello+std::move(name)+howAreYou);
 }
 
 
