@@ -14,7 +14,7 @@ ULL odd_isReal(ULL L, ULL R) {
     {
         marker = 1;
         number = 0;
-        step = 0;
+        step = 1;
         last_divisor = 0;
 
         while(marker<=i/2+1)
@@ -45,7 +45,6 @@ ULL odd_isReal(ULL L, ULL R) {
 
                 
                 
-                ++marker;
                 
                 marker += step;
 
