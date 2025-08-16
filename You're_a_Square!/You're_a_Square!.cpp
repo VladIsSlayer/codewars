@@ -3,7 +3,7 @@
 
 bool is_square(int n)
 {
-    int less_number = int(sqrt(n));
+    int less_number = ceil(sqrt(n));
     if (n%less_number==0) return true;
     else return false;
 }
